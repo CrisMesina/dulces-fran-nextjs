@@ -29,8 +29,8 @@ export const Navbar = () => {
             href:"/"
         },
         {
-            label: "Servicios",
-            href:"#servicios"
+            label: "Productos",
+            href:"#productos"
         },
         {
             label: "Nosotros",
@@ -60,7 +60,7 @@ export const Navbar = () => {
                             </span>
                         </div>
                     </a>
-                    <nav className='hidden md:flex items-center gap-8'>
+                    <nav className='hidden lg:flex items-center gap-8'>
                         {/* Links de navegacion */}
                         {navegador.map((n, i) => (
                             <a 
@@ -80,7 +80,7 @@ export const Navbar = () => {
                             </a>
                         ))}
                     </nav>
-                    <div className='hidden md:flex items-center gap-6'>
+                    <div className='hidden lg:flex items-center gap-6'>
                         <div className='flex items-center gap-3'>
                             {/* Icono de instagram */}
                             <a 
@@ -107,7 +107,7 @@ export const Navbar = () => {
                             </a>
                         </div>
                     </div>
-                    <div className='md:hidden flex'>
+                    <div className='lg:hidden flex'>
                         <button 
                             className='w-18 h-18 inset-0'
                             onClick={() => setIsOpen(!isOpen)}
