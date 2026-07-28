@@ -1,5 +1,5 @@
 import { Hero } from "@/components/landing/Hero";
-import { Servicios } from "@/components/landing/Servicios";
+import { Productos } from "@/components/landing/Productos";
 import Image from "next/image";
 
 
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main>
       <Hero/>
-      <Servicios/>
+      <Productos/>
 
 
     </main>
