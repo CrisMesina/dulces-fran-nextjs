@@ -17,7 +17,7 @@ export const Contactanos = () => {
             id: 1,
             title: "Teléfono",
             value: "+56 9 9562 9153",
-            description: "Llamadas y WhatsApp",
+            description: "WhatsApp",
             link: "https://wa.me/56995629153"
         },
         {
