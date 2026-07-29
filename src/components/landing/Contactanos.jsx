@@ -162,12 +162,6 @@ export const Contactanos = () => {
 
                     {/* Espacio para Imagen */}
                     <div className='flex flex-col gap-6'>
-                        <div className='relative h-80 rounded-3xl bg-gradient-to-br from-[#ba3de3] to-[#F8A8B9] flex items-center justify-center shadow-lg'>
-                            <div className='text-center px-6'>
-                                <p className='text-white font-Caveat text-2xl'>Tu imagen aquí</p>
-                                <p className='text-white text-sm mt-2'>Foto del espacio de trabajo</p>
-                            </div>
-                        </div>
                         
                         <div className='bg-white rounded-2xl p-6 shadow-lg'>
                             <h4 className='font-Caveat text-2xl text-[#3E2723] mb-4'>Horario de Atención</h4>

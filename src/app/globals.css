@@ -32,3 +32,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.bg-nosotros{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('/images/fondoNosotros.webp');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,4 +1,6 @@
+import { Contactanos } from "@/components/landing/Contactanos";
 import { Hero } from "@/components/landing/Hero";
+import { Nosotros } from "@/components/landing/Nosotros";
 import { Productos } from "@/components/landing/Productos";
 import Image from "next/image";
 
@@ -10,6 +12,8 @@ export default function Home() {
     <main>
       <Hero/>
       <Productos/>
+      <Nosotros/>
+      <Contactanos/>
 
 
     </main>
