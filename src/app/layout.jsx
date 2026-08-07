@@ -49,14 +49,18 @@ export default function RootLayout({ children }) {
 
       <body className="min-h-full flex flex-col">
           
+        <noscript>
+          <iframe 
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W4DS5GPH" 
+            height="0" 
+            width="0" 
+            style={{display: 'none', visibility: 'hidden'}}
+          ></iframe>
+        </noscript>
         <Navbar/>
         {children}
         <Footer/>
-      
       </body>
-      <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4DS5GPH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-      </noscript>
     </html>
   );
 }
