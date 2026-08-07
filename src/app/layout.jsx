@@ -1,5 +1,6 @@
 
 import "./globals.css";
+import Script from "next/script";
 import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata = {
@@ -17,6 +18,17 @@ export default function RootLayout({ children }) {
       lang="es"
     >
       <head>
+        <Script
+          id="google-tag-manager"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-W4DS5GPH');`,
+          }}
+        />
         <meta name="keywords" content="Dulces Fran, dulcesfran, @dulcesfran, dulces artesanales, 
           dulces de calidad, dulces caseros, dulces para eventos, dulces para regalar, 
           dulces naturales, dulces personalizados, dulces para fiestas, 
@@ -32,6 +44,7 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://dulcesfran.cl"/>
         <meta property="og:title" content={metadata.title}/>
         <meta property="og:description" content={metadata.description}/>
+        
       </head>
 
       <body className="min-h-full flex flex-col">
@@ -41,6 +54,9 @@ export default function RootLayout({ children }) {
         <Footer/>
       
       </body>
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4DS5GPH" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+      </noscript>
     </html>
   );
 }
